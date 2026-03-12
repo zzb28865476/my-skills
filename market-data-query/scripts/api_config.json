@@ -1,0 +1,60 @@
+{
+  "stock": {
+    "base_url": "http://glink.genius.com.cn/stockf10-api/stockf10",
+    "endpoints": {
+      "cwsj": {
+        "name": "财务数据",
+        "description": "获取股票A股的公司2021年来对应报告期的财务数据"
+      },
+      "dstx": {
+        "name": "大事提醒",
+        "description": "获取股票A股的大事内容"
+      },
+      "gnjd": {
+        "name": "概念解读",
+        "description": "获取股票A股的公司所属的概念题材和入选理由"
+      },
+      "gsgg": {
+        "name": "公司高管",
+        "description": "获取股票A股的公司高管信息"
+      },
+      "gszl": {
+        "name": "公司资料",
+        "description": "获取股票A股的公司资料基本信息"
+      },
+      "gbjg": {
+        "name": "股本结构",
+        "description": "获取股票A股的公司股本结构"
+      },
+      "jyfx": {
+        "name": "经营分析",
+        "description": "获取股票A股的公司的经营信息"
+      },
+      "sdgd": {
+        "name": "十大股东",
+        "description": "获取股票A股的十大股东信息"
+      },
+      "thbj": {
+        "name": "同行比较",
+        "description": "获取股票A股的同行公司的对比信息"
+      },
+      "tzpjmx": {
+        "name": "投资评级明细",
+        "description": "获取股票A股的投资明细信息"
+      },
+      "tzpjtj": {
+        "name": "投资评级统计",
+        "description": "获取股票A股的投资评级统计信息",
+        "extra_params": ["period"]
+      }
+    }
+  },
+  "fund": {
+    "base_url": "",
+    "endpoints": {}
+  },
+  "index": {
+    "base_url": "",
+    "endpoints": {}
+  }
+}
