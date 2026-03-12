@@ -13,7 +13,7 @@ import os
 import json
 import sys
 import argparse
-import requests  # 替换为标准requests库
+import requests
 
 
 def load_config(config_path):
@@ -78,7 +78,10 @@ def call_api(url, params):
     }
     
     try:
-        response = requests.post(url, headers=headers, json=params, timeout=30)
+        # ============================================
+        # 【修改1】POST 改为 GET 请求
+        # ============================================
+        response = requests.get(url, headers=headers, params=params, timeout=30)
         
         if response.status_code >= 400:
             raise Exception(f"HTTP请求失败: 状态码 {response.status_code}, 响应内容: {response.text}")
